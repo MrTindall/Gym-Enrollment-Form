@@ -1,0 +1,171 @@
+:root {
+    --cust-color-main: #fadf86;
+    --cust-color-accent:  #f7f3ea;  
+    --cust-color-text-reverse: #FFFFFF;
+    --cust-color-link: #ff7b00;
+    --cust-color-background: #F2EDEB;
+    --cust-h1-color: #6138b8;
+    --cust-border-color:rgb(110, 95, 67);
+    --cust-not-active-color: #d0ba8e;
+    
+}
+* {
+margin: 0;
+padding: 0;
+font-family: sans-serif;
+box-sizing: border-box;
+}
+h1 {
+    text-align: center;
+    margin-bottom: 4px;
+    color: rgb(70, 70, 70);
+    font-size: 55px;
+}
+h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: rgb(95, 95, 95);
+    font-size: 36px;
+}
+.invalid {
+    border-color: red;
+    outline-color: red;
+}
+
+input {
+    display: block;
+}
+
+.member span {
+    width: 100px;
+    padding: 0 10px;
+
+}
+
+#memberAdd, #memberList, #memberMenu {
+    display: block;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: var(--cust-color-main);
+
+}
+
+#memberMenu input {
+    display: inline-block;
+    padding: 5px;
+    margin: 5px;
+
+}
+
+#memberAdd {
+    max-width: 800px;
+
+}
+#memberForm > input, button {
+    width: 100%;
+    padding: 10px;
+    margin: 10px;
+    font-size: 16px;
+}
+
+#gymMenu {
+    max-width: 800px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: start;
+}
+
+#viewForm, #viewList {
+    width: 10vw;
+    height: 5vh;
+    font-weight: bold;
+    font-size: 16px;
+    border-top-left-radius:20px ;
+    border-top-right-radius:20px ;
+    border: none;
+
+}
+#viewForm:hover, #viewList:hover {
+    cursor: pointer;
+
+}
+.active {
+background-color: var(--cust-color-main);
+
+}
+.not-active {
+    background-color: var(--cust-not-active-color);
+
+}
+
+
+body {
+    padding-top: 40px;
+    background-image: url(/background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+img {
+    
+}
+.member-list--filters {
+    display: flex;
+    justify-content: start;
+    width: 100%;
+
+}
+#filterKeyword, #filterSort {
+    width: 30%;
+    height: 3vh;
+    padding-left: 8px;
+    font-size: 16px;
+    background-color: var(--cust-color-accent);
+    margin-bottom: 12px;
+
+}
+#filterSortLabel {
+    padding-left: 100px;
+}
+#filterSortLabel, #filterKeywordLabel {
+    padding-right: 10px;
+    padding-top: 3px;
+    font-weight: bold;
+}
+
+.member-list--members {
+    overflow-y: scroll;
+    height: 350px;
+
+}
+
+.member {
+    margin-top: 10px;
+    padding: 20px 4px;
+    border: 1px solid var(--cust-border-color);
+
+    background-color: var(--cust-color-accent);
+
+}
+
+/* ===== Scrollbar CSS ===== */
+  /* Firefox */
+  * {
+    scrollbar-width: auto;
+    scrollbar-color: #d9a536 #fadf86;
+  }
+
+  /* Chrome, Edge, and Safari */
+  *::-webkit-scrollbar {
+    width: 16px;
+  }
+
+  *::-webkit-scrollbar-track {
+    background: #fadf86;
+  }
+
+  *::-webkit-scrollbar-thumb {
+    background-color: #d9a536;
+    border-radius: 10px;
+    border: 3px solid #fadf86;
+  }

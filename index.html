@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gym Enrollment</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <h1> Gym Enrollment Form</h1>
+    <h2>Alex Tindall</h2>
+    <div id="gymMenu">
+        <input type="button" id="viewForm" value="Enroll Member" class="active">
+        <input type="button" id="viewList" value="View Member" class="not-active">
+    </div>
+
+
+    <div id="memberAdd">
+
+        <form id="memberForm">
+            <label for="memberFirstName" id="memberFirstNameLabel">First Name:</label>
+            <input type="text" id="memberFirstName" name="firstName" required>
+
+            <label for="memberLastName" id="memberLastNameLabel">Last Name:</label>
+            <input type="text" id="memberLastName" name="lastName" required>
+
+            <label for="memberUsername" id="memberUsernameLabel">Username:</label>
+            <input type="text" id="memberUsername" name="username" required>
+
+            <label for="memberBirthday" id="memberBirthdayLabel">Birthday:</label>
+            <input type="date" id="memberBirthday" name="birthday" required>
+
+            <input type="submit" value="Enroll Member">
+        </form>
+    </div>
+
+    <div id="memberList" style="display: none;">
+        <div class="member-list--filters">
+                <label for="filterKeyword" id="filterKeywordLabel">Keyword: </label>
+                <input type="text" name="keyword" id="filterKeyword">
+
+                <label for="filterSort" id="filterSortLabel">Sort By:</label>
+                <select name="sort" id="filterSort">
+                    <option value="id">Id</option>
+                    <option value="firstname">First Name</option>
+                    <option value="lastname">Last Name</option>
+                    <option value="username">Username</option>
+                    <option value="age">Age</option>
+                </select>
+        </div>
+        <div class="member-list--members"></div>
+    </div>
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
