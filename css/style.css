@@ -102,7 +102,7 @@ background-color: var(--cust-color-main);
 
 body {
     padding-top: 40px;
-    background-image: url(/background.jpg);
+    background-image: url(/images/background.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 }
